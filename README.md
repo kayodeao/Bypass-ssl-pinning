@@ -66,7 +66,7 @@ java -jar uber-apk-signer.jar — allowResign -a release.RE.apk
 
 ### Install the Resigned APK
 
-   - Connect your Android device or emulator to the testing machine via USB.
+   - Connect your Android device to the testing machine via USB or use emulator 
    - Install the resigned APK to the device or emulator using the following command:
      ```
      adb install release.RE-aligned-debugSigned.apk
@@ -76,10 +76,12 @@ java -jar uber-apk-signer.jar — allowResign -a release.RE.apk
    - Open the Flutter Android application on the device or emulator.
    - Monitor the Burp Suite proxy history to intercept and analyze the application traffic.
 
+Click the link for a guide on [usage of this process on iOS](https://github.com/Impact-I/reFlutter?tab=readme-ov-file#usage-on-ios)
+
 Additional Tips:
 - If the APK installation fails or the app does not appear on the device, consider transferring the signed APK file to the device via alternative methods such as web WhatsApp on the desktop and then installing it from the phone.
 
-Click the link for a guide on [usage of this process on iOS](https://github.com/Impact-I/reFlutter?tab=readme-ov-file#usage-on-ios)
+
 
 ## Conclusion
 Bypassing SSL pinning in a Flutter Android application is best done using the Reflutter framework in conjunction with Burp Suite for traffic interception. 
